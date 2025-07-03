@@ -95,11 +95,29 @@
         padding: 0.5rem;
       }
     }
+      .title-line {
+      display: inline;
+    }
+
+    @media (max-width: 500px) {
+      .title-line {
+        display: block;
+      }
+    }
+      .mobile-break {
+      display: none;
+    }
+
+    @media (max-width: 500px) {
+      .mobile-break {
+        display: inline;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>하율의 포트폴리오</h1>
+    <h1>하율의<span class="mobile-break"><br></span> 포트폴리오</h1>
     <p>시나리오로 세상을 그리는 사람</p>
   </header>
 
