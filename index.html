@@ -11,6 +11,8 @@
       background: url('A_digital_photograph_of_aged_parchment_paper_captu.png') no-repeat center center fixed;
       background-size: cover;
       color: #2e2e2e;
+      line-height: 1.8;
+      padding: 0 1rem;
     }
     .container {
       max-width: 960px;
@@ -34,6 +36,7 @@
     nav ul {
       list-style: none;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       padding: 0;
       margin: 2rem 0;
@@ -72,6 +75,25 @@
       font-size: 0.9rem;
       color: #777;
       padding: 3rem 1rem 2rem;
+    }
+
+    /* 모바일 최적화 */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      h2 {
+        font-size: 1.25rem;
+      }
+      .container {
+        padding: 1rem;
+      }
+      body {
+        padding: 0.5rem;
+      }
     }
   </style>
 </head>
@@ -114,7 +136,6 @@
           <strong>『메타버스 기반 신석기, 구석기 게임』</strong><br />
           수업시간에 졸던 초등학생 반항아 "웅진이", 구석기 시대로 가다!
         </a>
-        <!-- 추가 작품이 있다면 여기에 이어서 링크 추가 -->
       </div>
     </section>
 
