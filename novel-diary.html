@@ -1,38 +1,187 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>소설일기 | 하율의 포트폴리오</title>
+  <title>『소설일기』 | 하율의 포트폴리오</title>
   <style>
     body {
       font-family: 'Georgia', serif;
-      background-color: #f8f8f4;
+      background-color: #f9f8f4;
       color: #2e2e2e;
       margin: 0;
-      padding: 2rem;
+      padding: 0;
       line-height: 1.8;
     }
+
     .container {
       max-width: 800px;
       margin: auto;
+      padding: 2rem 1.5rem;
     }
+
     h1 {
       font-size: 2rem;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
-    p {
+
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 2.5rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3rem;
+    }
+
+    .box {
+      background-color: #fffefb;
+      border: 1px solid #ddd;
+      padding: 1rem;
       margin-top: 1rem;
+      border-radius: 8px;
+    }
+
+    .diary {
+      font-style: italic;
+      color: #444;
+    }
+
+    .fiction {
+      font-weight: bold;
+    }
+
+    /* Scroll-based flow styles */
+    .flow-section {
+      margin-top: 3rem;
+    }
+
+    .step {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.6s ease-out;
+      background-color: #fffefb;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .step.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .step h2 {
+      font-size: 1.4rem;
+      margin: 0 0 0.5rem;
+    }
+
+    .step p {
+      font-size: 1rem;
+      margin: 0;
+      color: #444;
+    }
+
+    .icon {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    a {
+      color: #2e2e2e;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+      }
+
+      .step h2 {
+        font-size: 1.2rem;
+      }
+
+      .step p {
+        font-size: 0.95rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>『소설일기』 프로젝트 소개</h1>
-    <p>이 페이지는 현재 준비 중입니다.</p>
-    <p>곧 사용자 일기를 입력하면 AI가 짧은 소설로 바꿔주는 체험형 예시를 보여드릴 예정입니다.</p>
-    <p>기획 의도, 작동 방식, 샘플 결과물 등을 여기에 정리할 수 있어요.</p>
+    <h1>『소설일기』</h1>
+    <p>당신이 오늘 쓴 일기, AI가 한 편의 짧은 소설로 다시 써드립니다.<br />
+    현실의 감정이 허구로, 단상이 이야기로 바뀌는 마법.</p>
+
+    <h2>기획 의도</h2>
+    <p>『소설일기』는 감정의 기록을 이야기로 재해석하는 창작 실험입니다.<br>
+    AI는 단순히 글을 바꾸는 도구가 아닌, 감정의 새로운 해석자입니다.</p>
+
+    <h2>서비스 흐름</h2>
+    <div class="flow-section">
+      <div class="step">
+        <span class="icon">✍️</span>
+        <h2>일기 작성</h2>
+        <p>사용자가 감정과 생각을 담아 하루를 기록합니다.</p>
+      </div>
+      <div class="step">
+        <span class="icon">🧠</span>
+        <h2>감정/문장 분석</h2>
+        <p>AI가 문장을 분석해 핵심 감정과 서사를 파악합니다.</p>
+      </div>
+      <div class="step">
+        <span class="icon">📖</span>
+        <h2>이야기로 변환</h2>
+        <p>분석 결과를 바탕으로 짧은 단편소설 형식으로 재창작됩니다.</p>
+      </div>
+      <div class="step">
+        <span class="icon">✨</span>
+        <h2>결과 소설 출력</h2>
+        <p>완성된 소설을 읽고 저장하거나 공유할 수 있습니다.</p>
+      </div>
+    </div>
+
+    <h2>샘플 변환 결과</h2>
+    <div class="box diary">
+      오늘은 아무 일도 없었지만 이상하게 마음이 무거웠다.<br>
+      점심은 편의점에서 먹었고, 저녁엔 멍하니 창밖만 바라봤다.
+    </div>
+    <div class="box fiction">
+      그녀는 아무도 모르게 하루를 접었다.<br>
+      햇살 한 줄기조차 말 걸지 않는 오후,<br>
+      도시의 소음만이 그녀가 존재함을 증명해줬다.
+    </div>
+
+    <h2>수익화 시나리오</h2>
+    <ul>
+      <li><strong>작가 구독 시스템:</strong> 독자들이 선호 작가를 구독하고, 매주 새로운 소설일기를 받아보는 유료 구독 모델.</li>
+      <li><strong>NFT 발행:</strong> 생성된 소설일기를 NFT로 발행하여 감정 기록의 소유권을 디지털 자산화.</li>
+      <li><strong>출판 연계:</strong> 우수한 시나리오를 선별하여 종이책 또는 전자책으로 출판하는 프로젝트화.</li>
+    </ul>
+
+    <h2>※ 현재 서비스는 기획 중입니다</h2>
+    <p>향후: 일기 입력 → AI 소설 변환 → 다운로드 기능 등이 추가될 예정입니다.</p>
+
+    <p><a href="./index.html">← 포트폴리오 메인으로 돌아가기</a></p>
   </div>
+
+  <script>
+    const steps = document.querySelectorAll('.step');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.3 });
+
+    steps.forEach(step => observer.observe(step));
+  </script>
 </body>
 </html>
