@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -7,32 +8,104 @@
   <style>
     body {
       font-family: 'Georgia', serif;
-      background-color: #f8f8f4;
+      background-color: #f4f2ec;
       color: #2e2e2e;
       margin: 0;
-      padding: 2rem;
+      padding: 0;
       line-height: 1.8;
     }
+
     .container {
       max-width: 800px;
       margin: auto;
+      padding: 2rem 1.5rem;
     }
+
     h1 {
       font-size: 2rem;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
     }
-    p {
-      margin-top: 1rem;
+
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 2.5rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3rem;
+    }
+
+    .logline, .intent, .character, .quotes, .footer {
+      background-color: #fffefb;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .character p strong {
+      display: inline-block;
+      width: 3rem;
+    }
+
+    .quotes p {
+      font-style: italic;
+      color: #444;
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #2e2e2e;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>『원죄의 아이 : 아르』 프로젝트 소개</h1>
-    <p>이 페이지는 현재 준비 중입니다.</p>
-    <p>곧 사용자 일기를 입력하면 AI가 짧은 소설로 바꿔주는 체험형 예시를 보여드릴 예정입니다.</p>
-    <p>기획 의도, 작동 방식, 샘플 결과물 등을 여기에 정리할 수 있어요.</p>
+    <h1>『원죄의 아이 : 아르』</h1>
+    <div class="logline">
+      <strong>📌 로그라인</strong><br>
+      마을 토박이인 "나"가 처음보는 의문의 소녀가 품고있는 마을의 추악한 사실을 파헤치는 이야기
+    </div>
+
+    <h2>장르</h2>
+    <p>미스터리 + 판타지</p>
+
+    <h2>기획 키워드</h2>
+    <p>원죄, 기억, 딜레마, 범죄, 추리</p>
+
+    <h2>기획 의도</h2>
+    <div class="intent">
+      실제 일어났던 마녀사냥 사건을 재해석하여 현대의 편견과 집단 심리에 대한 질문을 던진다.
+    </div>
+
+    <h2>주요 캐릭터</h2>
+    <div class="character">
+      <p><strong>아르:</strong> 의문투성이인 마을 뒷동산에 갑자기 나타난 소녀</p>
+      <p><strong>나:</strong> 마을에서 태어나 지금까지 살아온 시골 소년</p>
+    </div>
+
+    <h2>샘플 대사</h2>
+    <div class="quotes">
+      <p>"너도 내가 잘못했다고 생각해?"</p>
+      <p>"이미 베어 넘겨진 나무에서 뭘 더 바라는거야?"</p>
+    </div>
+
+    <div class="footer">
+      현재 제작중인 게임의 시나리오 제작과정 중 일부입니다.
+    </div>
+
+    <a href="./index.html">← 포트폴리오 메인으로 돌아가기</a>
   </div>
 </body>
 </html>
